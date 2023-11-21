@@ -1,0 +1,153 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(135deg ,#153677,#4e085f);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.todo-app{
+    min-width: 400px;
+    min-height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.todo-app h2{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.todo-app h2 img{
+    height: 30px;
+    width: 30px;
+}
+.input-row{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#edeef0;
+    border-radius: 30px;
+}
+#inputBox{
+    flex: 1;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    background: transparent;
+    font-size: 1.1rem;
+}
+#Submit{
+    padding: 16px 40px;
+    border: none;
+    outline: none;
+    background: #ff5945;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul{
+    padding-top: 10px;
+    
+}
+ul li{
+    position: relative;
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(rectangle-arrow.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+}
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(check-mark.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+ul li span:hover{
+    background: #edeef0;
+}
+.popup-container{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #8f8a9691;
+    filter: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.popup{
+    height: 200px;
+    width: 300px;
+    background: #6a558a;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.response{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.yes , .NO{
+    height: 40px;
+    width: 60px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.hidden{
+    visibility: hidden;
+}
