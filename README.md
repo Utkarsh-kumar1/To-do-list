@@ -12,5 +12,5 @@ A simple web application for managing your tasks and staying organized. This pro
 
 - **Frontend:**
   - HTML5
-  - CSS3
+  - CSS
   - JavaScript
